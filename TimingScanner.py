@@ -17,7 +17,7 @@ class TimingScanner(ControlFileScanner):
     def __init__(self):
         self.timer = Timer(FILE_SCAN_INTERVAL,self.timing_exec_func)
         self.host_address = ''
-        self.connect_port  = 8888
+        self.connect_port  = 4000
         self.control_folder = ""
         self.load_communication_parameters_from_config_file()
         ControlFileScanner.__init__(self, self.control_folder)

@@ -79,7 +79,6 @@ class ControlFileScanner(object):
                 self.sample_flag_info_list.append(flaged_sample)
                 # project_logger.write_log_message("flaged sample scanned:" + str(flaged_sample))
 
-
     def scan_control_file_for_reagent_info(self):
         if self.control_file_contents:
             for line in self.control_file_contents:
@@ -132,10 +131,13 @@ if __name__ == "__main__":
     scanner.scan_control_file_for_reagent_info()
 
     # testing for sample in-labbing position
+    '''
     for sample in scanner.sample_position_info_list:
         print sample
     for flaged_sample in scanner.sample_flag_info_list:
         print flaged_sample
+
+    '''
 
     print (r"////////////////////////////////////////////////////////////////////////////////////////////////")
     print      '-----------------------------------Beautiful Split Line--------------------------------'

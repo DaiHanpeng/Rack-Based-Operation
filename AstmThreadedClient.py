@@ -15,7 +15,7 @@ class AstmThreadedClient(object):
     """
     this class is a tcp client, handling astm message in a independent thread.
     """
-    def __init__(self, host_address='localhost', port='9000'):
+    def __init__(self, host_address='localhost', port='4000'):
         self.message_sending_buffer = []
         self.host_address = host_address
         self.port = port
@@ -30,7 +30,7 @@ class AstmThreadedClient(object):
             self.tcp_client_socket.connect((self.host_address, int(self.port)))
         except Exception as e:
             project_logger.write_log_message(e)
-            project_logger.write_log_message("connect to host:" + self.host_address + "  port:" + self.port + "  failed!")
+            project_logger.write_log_message("connect to host:" + str(self.host_address) + "  port:" + str(self.port) + "  failed!")
 
     def close(self):
         self.tcp_client_socket.close()

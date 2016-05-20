@@ -1,6 +1,6 @@
 # -*- mode: python -*-
-a = Analysis(['D:\\01_Automation\\23_Experiential_Conclusions_2016\\03_Reagent_And_ThCG_Auto_Dilute\\Python\\TimingScanner.py'],
-             pathex=['D:\\01_Automation\\23_Experiential_Conclusions_2016\\03_Reagent_And_ThCG_Auto_Dilute\\Python'],
+a = Analysis(['D:\\01_Automation\\23_Experiential_Conclusions_2016\\13_HuaXi_2nd\\Python\\TimingScanner.py'],
+             pathex=['D:\\01_Automation\\23_Experiential_Conclusions_2016\\13_HuaXi_2nd\\Python'],
              hiddenimports=[],
              hookspath=None,
              runtime_hooks=None)
